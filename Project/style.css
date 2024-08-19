@@ -199,7 +199,7 @@ body:not(.main) .container {
   height: 27px;
   line-height: 27px;
   display: inline-block;
-  padding: 0 11px;
+  padding: 0 13px;
   border-radius: 0 32px 32px 0;
   background: #ef3b24;
   color: #fff;
@@ -383,6 +383,7 @@ body:not(.main) .container {
 .mainJobs {
   margin-top: 40px;
   padding-right: 496px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .mainJobs .section__tit {
@@ -424,6 +425,7 @@ body:not(.main) .container {
 
 .mainJobs__list-txt {
   padding: 40px 32px 0 32px;
+  font-family: "Ubuntu";
 }
 
 .mainJobs__list-txt > strong {
@@ -475,18 +477,20 @@ body:not(.main) .container {
 
 .mainPeople {
   margin-top: 40px;
-  padding-left: 490px;
+  padding-left: 500px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .mainPeople .section__tit {
   position: absolute;
-  top: 20px;
-  left: 30px;
+  top: 30px;
+  left: 150px;
+  text-align: right;
 }
 
 .mainPeople_list {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0fr 1fr;
 }
 
 .mainPeople_list > li {
@@ -498,16 +502,102 @@ body:not(.main) .container {
   height: 270px;
 }
 
+.mainPeople_list-img > img {
+  padding: 0;
+}
+
 .mainPeople_list-txt {
-  padding: 40px 0 0 32px;
+  padding: 40px 0 0 43px;
+  font-family: "Ubuntu";
 }
 
 .mainPeople_list-txt > strong {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
 }
 
+.mainPeople_list-txt > ul > li {
+  display: inline-block;
+  font-size: 13px;
+}
 
+.mainPeople_list-txt > ul > li + li::before {
+  display: inline-block;
+  background-color: #000000;
+  width: 1px;
+  height: 15px;
+  content: "";
+  margin: 8px 6px -2px 1px;
+}
+
+/* ------------------main/mainCulture-------------------- */
+.mainCulture {
+  font-family: "Ubuntu";
+  position: relative;
+  margin-top: 40px;
+}
+
+.mainCulture .section__tit{
+  width: 600px;
+ }
+
+ .mainCulture__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mainCulture__img > ul >li {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: #ef3b24;
+  border-radius: 16px;
+  padding: 32px 0 0 24px;
+}
+
+.aos-animate .mainCulture__img > ul > li {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.mainCulture__img > ul > li > strong {
+  font-weight: 700;
+  font-family: "Ubuntu";
+  line-height: 30px;
+}
+
+.mainCulture__img > ul > li > span {
+  position:absolute; 
+  bottom:24px; 
+  left:24px; 
+  font-weight:bold; 
+}
+
+.mainCulture__img > ul >li:nth-child(1) {
+  top: 0;
+  right: 19px;
+  transition-delay: .5s;
+  z-index: 2;
+  width: 368px;
+  height: 368px;
+  color: white;
+}
+
+.mainCulture__img > ul >li:nth-of-type(2) {
+  top: 301px;
+  right: 310px;
+  transform: translateX(-70px);
+  transition-delay: .7s;
+  background: #FFF0EE;
+ }
+
+ .mainCulture__img > ul >li:nth-of-type(3) {
+  top: 417px;
+  right: 63px;
+  transition-delay: .9s;
+  background: #FFCE6E;
+ }
 
 /* ------------------footer-------------------- */
 .footer {
