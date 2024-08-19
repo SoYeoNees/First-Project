@@ -51,6 +51,7 @@
   cursor: pointer;
   font-weight: 700;
   font-size: 20px;
+  padding: 38px 8px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -67,7 +68,7 @@
   width: 100%;
   z-index: 1;
   text-align: center;
-  top: 63px;
+  top: 100px;
   left: 0;
 }
 
@@ -75,7 +76,7 @@
   width: 90px;
   position: absolute;
   padding: 0 13px;
-  left: -10px;
+  left: -13px;
 }
 
 /* Links inside the dropdown */
@@ -198,7 +199,7 @@ body:not(.main) .container {
   height: 27px;
   line-height: 27px;
   display: inline-block;
-  padding: 0 8px;
+  padding: 0 11px;
   border-radius: 0 32px 32px 0;
   background: #ef3b24;
   color: #fff;
@@ -317,7 +318,7 @@ body:not(.main) .container {
 
 .wide .thumbnail__txt {
   border: 0;
-  padding: 60px 32px 0 32px;
+  padding: 25px 30px 0 30px;
 }
 
 .wide .thumbnail__txt > strong {
@@ -469,6 +470,44 @@ body:not(.main) .container {
   right: 30px;
   bottom: 20px;
 }
+
+/* ---------------- section/mainPeople----------- */
+
+.mainPeople {
+  margin-top: 40px;
+  padding-left: 490px;
+}
+
+.mainPeople .section__tit {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.mainPeople_list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainPeople_list > li {
+  display: block;
+  height: 357px;
+}
+
+.mainPeople_list-img {
+  height: 270px;
+}
+
+.mainPeople_list-txt {
+  padding: 40px 0 0 32px;
+}
+
+.mainPeople_list-txt > strong {
+  font-size: 18px;
+  font-weight: 800;
+}
+
+
 
 /* ------------------footer-------------------- */
 .footer {
