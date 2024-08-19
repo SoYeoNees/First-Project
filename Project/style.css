@@ -600,41 +600,48 @@ body:not(.main) .container {
  }
 
 /* ------------------footer-------------------- */
+.main .footer{
+  background: #F5F5F5;
+}
+
 .footer {
-  background-color: #f5f5f5;
+  background-color: #fff;
   border-top: 1px solid #e8e8e8;
   padding: 41px 0 40px;
-  width: 100vw;
-  height: 188px;
   position: fixed;
   bottom: 0;
+  width: 100%;
+  z-index: 2;
 }
+
+.footer .inner {
+  display: flex;
+}
+
+.footer .logo {
+  display: block;
+  margin: 0 68px 0 0;
+  width: 202px;
+  height: 32px;
+}
+
+.footer .copy {
+  margin-top: 7px;
+}
+
 
 .footer .logo > img {
   width: 100px;
 }
 
-.footer .inner .inform {
+.footer .copy > li {
   display: flex;
-  flex-direction: row;
-}
-
-.footer .inner .inform .tel {
-  margin-left: 30px;
-}
-
-.footer .inner {
-  display: flex;
-  justify-content: flex-start;
-  line-height: 35px;
-}
-
-.footer .copy {
-  margin-left: 100px;
-}
-
-.footer .copy li {
   font-size: 18px;
+  line-height: 22px;
+}
+
+.footer .copy > li + li {
+  margin-top: 16px;
 }
 
 .footer .copy li p {
@@ -655,6 +662,13 @@ body:not(.main) .container {
 .footer .copy > li > p.tel:before {
   background-image: url(image/f_tel.svg);
 }
+
+.footer .copy > li > p.tel {
+  padding-left: 30px;
+}
+
+
+
 
 /* ----------------------미디어 쿼리-------------------- */
 @media (max-width: 760px) {
