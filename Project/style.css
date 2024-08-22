@@ -1,3 +1,7 @@
+.main {
+  overflow-x: hidden;
+}
+
 .inner {
   width: 1200px;
   margin: 0 auto;
@@ -157,10 +161,10 @@ body:not(.main) .container {
 }
 
 .main .container .section .txt {
+  margin-top: 100px;
   height: 64px;
   position: relative;
 }
-
 .main .container .section .txt > p {
   color: #333;
   font-weight: 500;
@@ -168,7 +172,12 @@ body:not(.main) .container {
   position: absolute;
   top: 0;
   left: 0;
+  transition: opacity 0.3s;
+  opacity: 0;
   font-family: "Ubuntu";
+}
+.main .container .section .txt > p.active {
+  opacity: 1;
 }
 
 .main .container .section .tit {
@@ -383,7 +392,8 @@ body:not(.main) .container {
 .mainJobs {
   margin-top: 40px;
   padding-right: 496px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .mainJobs .section__tit {
@@ -478,7 +488,8 @@ body:not(.main) .container {
 .mainPeople {
   margin-top: 40px;
   padding-left: 500px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 .mainPeople .section__tit {
@@ -537,17 +548,17 @@ body:not(.main) .container {
   margin-top: 40px;
 }
 
-.mainCulture .section__tit{
+.mainCulture .section__tit {
   width: 600px;
- }
+}
 
- .mainCulture__img {
+.mainCulture__img {
   position: absolute;
   right: 0;
   top: 0;
 }
 
-.mainCulture__img > ul >li {
+.mainCulture__img > ul > li {
   position: absolute;
   width: 280px;
   height: 280px;
@@ -568,50 +579,48 @@ body:not(.main) .container {
 }
 
 .mainCulture__img > ul > li > span {
-  position:absolute; 
-  bottom:24px; 
-  left:24px; 
-  font-weight:bold; 
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-weight: bold;
 }
 
-.mainCulture__img > ul >li:nth-child(1) {
-  top: 0;
-  right: 19px;
-  transition-delay: .5s;
+.mainCulture__img > ul > li:nth-child(1) {
+  top: -20px;
+  right: 25px;
+  transition-delay: 0.5s;
   z-index: 2;
   width: 368px;
   height: 368px;
   color: white;
 }
 
-.mainCulture__img > ul >li:nth-of-type(2) {
+.mainCulture__img > ul > li:nth-of-type(2) {
   top: 301px;
   right: 310px;
-  transform: translateX(-70px);
-  transition-delay: .7s;
-  background: #FFF0EE;
- }
+  transform: translateX(-15px);
+  transition-delay: 0.7s;
+  background: #fff0ee;
+}
 
- .mainCulture__img > ul >li:nth-of-type(3) {
+.mainCulture__img > ul > li:nth-of-type(3) {
   top: 417px;
-  right: 63px;
-  transition-delay: .9s;
-  background: #FFCE6E;
- }
+  right: 80px;
+  transition-delay: 0.9s;
+  background: #ffce6e;
+}
 
 /* ------------------footer-------------------- */
-.main .footer{
-  background: #F5F5F5;
+.main .footer {
+  background: #f5f5f5;
 }
 
 .footer {
-  background-color: #fff;
   border-top: 1px solid #e8e8e8;
   padding: 41px 0 40px;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   z-index: 2;
+  margin-top: 350px;
 }
 
 .footer .inner {
@@ -628,7 +637,6 @@ body:not(.main) .container {
 .footer .copy {
   margin-top: 7px;
 }
-
 
 .footer .logo > img {
   width: 100px;
@@ -666,9 +674,6 @@ body:not(.main) .container {
 .footer .copy > li > p.tel {
   padding-left: 30px;
 }
-
-
-
 
 /* ----------------------미디어 쿼리-------------------- */
 @media (max-width: 760px) {
