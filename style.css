@@ -1,0 +1,761 @@
+.main {
+  overflow-x: hidden;
+}
+
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.header {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.header .inner {
+  max-width: none;
+  width: auto;
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  display: block;
+}
+.header .logo > img {
+  width: 100px;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  background: none;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+  color: rgb(0, 0, 0);
+  background: none;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 38px 8px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  top: 100px;
+  left: 0;
+}
+
+#Jobs {
+  width: 90px;
+  position: absolute;
+  padding: 0 13px;
+  left: -13px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 0;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: #ffeb60;
+}
+
+.header .btn-login {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 16px;
+  height: 34px;
+  line-height: 33px;
+  border: 1px solid #a4a4a4;
+  border-radius: 19px;
+  padding: 0 30px;
+}
+
+.header .btn-login:hover {
+  background: #f7f7f7;
+}
+
+/* ----------------container------------------- */
+.container {
+  padding-top: 177px;
+  min-height: 600px;
+  max-width: none;
+  overflow-x: hidden;
+}
+
+body:not(.main) .container {
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.main .container .section {
+  min-width: 1200px;
+  position: relative;
+  z-index: 2;
+  height: 763px;
+}
+
+.main .container .section:nth-child(2) {
+  height: 704px;
+}
+.main .container .section:nth-child(3) {
+  height: 824px;
+}
+.main .container .section:nth-child(4) {
+  height: 1004px;
+}
+.main .container .section:nth-child(5) {
+  height: 1360px;
+}
+.main .container .section:nth-child(6) {
+  height: 863px;
+}
+
+.main .container .section .inner {
+  height: 100%;
+}
+
+.main .container .section .txt {
+  margin-top: 100px;
+  height: 64px;
+  position: relative;
+}
+.main .container .section .txt > p {
+  color: #333;
+  font-weight: 500;
+  font-size: 64px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s;
+  opacity: 0;
+  font-family: "Ubuntu";
+}
+.main .container .section .txt > p.active {
+  opacity: 1;
+}
+
+.main .container .section .tit {
+  font-size: 110px;
+  font-weight: bold;
+  line-height: 110px;
+  letter-spacing: -10px;
+  margin-top: 35px;
+  display: inline-block;
+  position: relative;
+  font-family: "Ubuntu";
+}
+
+.main .container .section .tit::before {
+  content: "";
+  z-index: -1;
+  display: block;
+  height: 52px;
+  position: absolute;
+  left: -13px;
+  right: -30px;
+  bottom: -10px;
+  background: rgba(239, 59, 36, 0.13);
+  border-radius: 10px 0 0 10px;
+}
+
+.main .container .section .tit > span {
+  height: 27px;
+  line-height: 27px;
+  display: inline-block;
+  padding: 0 13px;
+  border-radius: 0 32px 32px 0;
+  background: #ef3b24;
+  color: #fff;
+  font-size: 15px;
+  position: absolute;
+  right: -100px;
+  bottom: 15px;
+  letter-spacing: 0px;
+  font-family: "Ubuntu";
+}
+
+.main .container .section .tit > span:before {
+  content: "";
+  display: block;
+  height: 52px;
+  width: 5px;
+  background: #ef3b24;
+  position: absolute;
+  left: -1px;
+  top: 0;
+}
+
+.main .container .section .subs {
+  margin-top: 61px;
+}
+
+.main .container .section .subs > p {
+  font-size: 24px;
+  line-height: 34px;
+  color: #333;
+}
+
+.main .container .section .main-line {
+  width: 1108px;
+  height: 799px;
+  position: absolute;
+  right: -118px;
+  top: -234px;
+  transform: scale(1.3);
+}
+.main .container .section .main-line.s-1 {
+  top: -234px;
+}
+
+.main .container .section .subs > p > strong {
+  color: #ef3b24;
+  font-weight: 800;
+  font-size: inherit;
+}
+
+.main .container .section .subs > p + p {
+  margin-top: 24px;
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+/*------------section/mainCompany---------------------*/
+.thumbnail {
+  display: flex;
+  gap: 20px;
+}
+
+.thumbnail > li {
+  flex: 1;
+}
+
+.thumbnail > li.wide {
+  flex: none;
+  width: 580px;
+}
+
+.thumbnail > li > a {
+  display: block;
+  background: #fff;
+  height: 100%;
+}
+
+.thumbnail > li > a:hover {
+  background: #f5f5f5;
+  border-radius: 25px 25px 0 0;
+}
+
+.thumbnail__img > img {
+  width: 100%;
+  border: 1px solid #e8e8e8;
+  border-bottom: unset;
+  border-radius: 15px 15px 0 0;
+}
+
+.thumbnail__txt {
+  border: 1px solid #e8e8e8;
+  border-width: 0 1px 1px 1px;
+  height: 206px;
+  padding: 24px 16px 0 16px;
+}
+
+.thumbnail__txt > strong {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.thumbnail__txt > p {
+  margin-top: 16px;
+  line-height: 24px;
+}
+
+.thumbnail__txt-dot {
+  margin-top: 16px;
+}
+
+.thumbnail__txt-dot > li {
+  line-height: 24px;
+  position: relative;
+  padding-left: 12px;
+}
+
+.thumbnail__txt-dot > li:before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  background: #222;
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+
+.wide .thumbnail__txt {
+  border: 0;
+  padding: 25px 30px 0 30px;
+}
+
+.wide .thumbnail__txt > strong {
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.wide .thumbnail__txt > p {
+  font-size: 18px;
+  margin-top: 14px;
+  line-height: 30px;
+}
+
+.wide .thumbnail__txt > p > strong {
+  display: block;
+  font-size: inherit;
+  font-weight: 700;
+  margin-top: 26px;
+}
+
+.thumbnail > li.wide > a {
+  border: 1px solid #e8e8e8;
+  border-radius: 8px 8px 0px 0px;
+  position: relative;
+}
+
+/* -----------------section__tit------------ */
+
+.section__tit > strong {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+}
+
+.section__tit > p {
+  font-size: 24px;
+  line-height: 34px;
+  margin: 32px 0 30px;
+}
+
+.section__tit > p > strong {
+  font-size: inherit;
+  font-weight: 800;
+  line-height: 38px;
+  display: block;
+  margin-top: 32px;
+}
+
+.section__tit > a {
+  display: inline-block;
+  padding: 8px 0;
+  border-bottom: 1px solid #222;
+  font-size: 20px;
+  font-weight: 800;
+}
+.section__tit > a:hover {
+  color: #ef3b24;
+  border-bottom-color: #ef3b24;
+}
+
+/* -----------------section/mainJobs------------ */
+.mainJobs {
+  margin-top: 40px;
+  padding-right: 496px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mainJobs .section__tit {
+  position: absolute;
+  top: 20px;
+  left: 738px;
+}
+
+.mainJobs__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainJobs__list > li {
+  display: block;
+  background: #fff0ee;
+  height: 280px;
+  border-radius: 16px;
+  position: relative;
+}
+
+.mainJobs__list > li:first-child {
+  border-radius: 16px 0 0 0;
+}
+
+.mainJobs__list > li:nth-child(2) {
+  border-radius: 0 16px 0 0;
+  background: #fff;
+}
+
+.mainJobs__list > li:nth-child(3) {
+  border-radius: 0 0 0 16px;
+  background: #fff;
+}
+
+.mainJobs__list > li:nth-child(4) {
+  border-radius: 0px 0px 16px 0px;
+}
+
+.mainJobs__list-txt {
+  padding: 40px 32px 0 32px;
+  font-family: "Ubuntu";
+}
+
+.mainJobs__list-txt > strong {
+  font-size: 24px;
+  font-weight: 800;
+}
+
+.mainJobs__list-txt > strong > span {
+  font-size: inherit;
+}
+
+.mainJobs__list-txt > p {
+  margin-top: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 13px;
+  color: #595959ed;
+}
+
+.mainJobs__list-txt > a {
+  display: inline-block;
+  margin-top: 16px;
+  font: 12px;
+  font-weight: 800;
+  width: 50px;
+  height: 26px;
+  line-height: 24px;
+  border: 1px solid #a4a4a4;
+  border-radius: 12px;
+  color: #333;
+  text-align: center;
+}
+
+.mainJobs__list-txt > a:hover {
+  border-color: #222;
+  color: #222;
+}
+
+.mainJobs__list > li .ico_ani {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+}
+
+/* ---------------- section/mainPeople----------- */
+
+.mainPeople {
+  margin-top: 40px;
+  padding-left: 500px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.mainPeople .section__tit {
+  position: absolute;
+  top: 30px;
+  left: 150px;
+  text-align: right;
+}
+
+.mainPeople_list {
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+}
+
+.mainPeople_list > li {
+  display: block;
+  height: 357px;
+}
+
+.mainPeople_list-img {
+  height: 270px;
+}
+
+.mainPeople_list-img > img {
+  padding: 0;
+}
+
+.mainPeople_list-txt {
+  padding: 40px 0 0 43px;
+  font-family: "Ubuntu";
+}
+
+.mainPeople_list-txt > strong {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.mainPeople_list-txt > ul > li {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.mainPeople_list-txt > ul > li + li::before {
+  display: inline-block;
+  background-color: #000000;
+  width: 1px;
+  height: 15px;
+  content: "";
+  margin: 8px 6px -2px 1px;
+}
+
+/* ------------------main/mainCulture-------------------- */
+.mainCulture {
+  font-family: "Ubuntu";
+  position: relative;
+  margin-top: 40px;
+}
+
+.mainCulture .section__tit {
+  width: 600px;
+}
+
+.mainCulture__img {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.mainCulture__img > ul > li {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background: #ef3b24;
+  border-radius: 16px;
+  padding: 32px 0 0 24px;
+}
+
+.aos-animate .mainCulture__img > ul > li {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.mainCulture__img > ul > li > strong {
+  font-weight: 700;
+  font-family: "Ubuntu";
+  line-height: 30px;
+}
+
+.mainCulture__img > ul > li > span {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  font-weight: bold;
+}
+
+.mainCulture__img > ul > li:nth-child(1) {
+  top: -20px;
+  right: 25px;
+  transition-delay: 0.5s;
+  z-index: 2;
+  width: 368px;
+  height: 368px;
+  color: white;
+}
+
+.mainCulture__img > ul > li:nth-of-type(2) {
+  top: 301px;
+  right: 310px;
+  transform: translateX(-15px);
+  transition-delay: 0.7s;
+  background: #fff0ee;
+}
+
+.mainCulture__img > ul > li:nth-of-type(3) {
+  top: 417px;
+  right: 80px;
+  transition-delay: 0.9s;
+  background: #ffce6e;
+}
+
+/* ------------------footer-------------------- */
+.main .footer {
+  background: #f5f5f5;
+}
+
+.footer {
+  border-top: 1px solid #e8e8e8;
+  padding: 41px 0 40px;
+  width: 100%;
+  z-index: 2;
+  margin-top: 350px;
+}
+
+.footer .inner {
+  display: flex;
+}
+
+.footer .logo {
+  display: block;
+  margin: 0 68px 0 0;
+  width: 202px;
+  height: 32px;
+}
+
+.footer .copy {
+  margin-top: 7px;
+}
+
+.footer .logo > img {
+  width: 100px;
+}
+
+.footer .copy > li {
+  display: flex;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.footer .copy > li + li {
+  margin-top: 16px;
+}
+
+.footer .copy li p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer .copy > li > p:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url(image/f_mail.svg) no-repeat center center;
+  vertical-align: middle;
+  margin: -5px 0 0 0;
+}
+
+.footer .copy > li > p.tel:before {
+  background-image: url(image/f_tel.svg);
+}
+
+.footer .copy > li > p.tel {
+  padding-left: 30px;
+}
+
+/* ----------------------미디어 쿼리-------------------- */
+@media (max-width: 760px) {
+  .header .inner {
+    width: auto;
+    background-color: #83ff5d;
+    height: 80px;
+  }
+
+  .btn-login {
+    display: none;
+  }
+
+  /* -------------햄버거 메뉴 스타일----------------- */
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: end;
+  }
+
+  .menu-icon .bar {
+    height: 4px;
+    width: 25px;
+    background-color: #000;
+    margin: 3px 0;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  .header .btn-login {
+    display: none;
+  }
+
+  .header .logo {
+    margin-left: 20px;
+  }
+
+  /* 
+
+    .navbar {
+      display: none;
+      
+      width: 100vw;
+      background-color: #ffffff;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      z-index: 99;
+      padding: 13px;
+      margin-top: 0;
+      text-align: center;
+      
+      gap: 25px;
+    }
+
+   
+
+    .dropdown-content a {
+      display: none;
+    }
+ */
+  .menu-icon {
+    /* 핸드폰에서 햄버거 메뉴 표시 */
+  }
+
+  /*  */
+}
