@@ -181,6 +181,12 @@ body:not(.main) .container {
   opacity: 1;
 }
 
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 .main .container .section .tit {
   font-size: 110px;
   font-weight: bold;

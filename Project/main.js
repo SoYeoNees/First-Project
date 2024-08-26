@@ -4,23 +4,24 @@ function toggleMenu() {
   }
 
 
-  // script.js
 
-// const texts = ["The Best Rewards.", "The Best Performance."];
-// let currentIndex = 0;
-// const textElement = document.getElementsById('active');
 
-// function typeText() {
-//     textElement.textContent = texts[currentIndex];
-//     currentIndex = (currentIndex + 1) % texts.length;
-// }
+  const texts = document.querySelectorAll('.txt p');
+  let currentIndex = 0;
 
-// 2초마다 텍스트 변경
-// setInterval(typeText, 2000); 
+  function switchText() {
+      texts.forEach((text, index) => {
+          text.classList.remove('active');
+          if (index === currentIndex) {
+              text.classList.add('active');
+          }
+      });
+      currentIndex = (currentIndex + 1) % texts.length;
+  }
 
-// 커서 애니메이션 추가
-// const cursor = document.createElement('p');
-// cursor.className = 'cursor';
-// textElement.parentElement.appendChild(cursor);
+  // 2초마다 텍스트 변경
+  setInterval(switchText, 1000);
 
+  // 초기 텍스트 설정
+  switchText();
 
