@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step02_SVG1.html</title>
+    <style>
+        .weather {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background: #eee;
+            width: 500px;
+        }
+        .cloud {
+            fill: skyblue;
+        }
+        .sun {
+            fill: orange;
+            transform-origin: 77.75px 24.03px;
+            animation: w-ani 0.5 infinite alternate;
+        }
+        .line   {
+            stroke: orange;
+        }
+        .paths {
+            stroke: blue;
+            fill: none;
+        }
+        @keyframes w-ani {
+            0% {transform: scale(0.9);}
+            100% {transform: scale(1.1);}
+        }
+    </style>
+</head>
+<body>   
+    <svg class="weather" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" >
+    <g>
+        <ellipse class="cloud" cx="11.26" cy="66.7" rx="7.39" ry="5"/>
+    </g>
+    <g>
+        <ellipse class="cloud" cx="18.96" cy="70.37" rx="7.39" ry="5"/>
+    </g>
+    <g>
+        <ellipse class="cloud" cx="18.93" cy="64.1" rx="7.39" ry="5"/>
+    </g>
+    <ellipse class="cloud" cx="29.91" cy="70.35" rx="6.11" ry="4.44"/>
+    <ellipse class="cloud" cx="27.75" cy="65.14" rx="6.11" ry="4.44"/>
+    <circle class="sun" cx="77.75" cy="24.03" r="8.27"/>
+    <line class="line" x1="77.75" y1="6.48" x2="77.75" y2="14.77"/>
+    <path class="paths" d="M10.43,3.18c-5.52,5.04-4.2,11.04-4.2,11.04l6.36,4.92l8.88-2.04c0,0,8.4-11.88,10.8-2.88
+        s6.36,13.21-5.04,13.57s-13.81-7.56-14.65,0.72c-0.84,8.28,1.33,9.84,7.93,12.24c6.6,2.4,15.96,0.84,15.96,0.84
+        s11.16,0.96,9.18-5.64s12.55-6.36,12.55-4.08s11.52,13.21,0.6,14.65c-10.92,1.44-21.13-1.2-23.47,3.12
+        c-2.34,4.32-9.3,8.64,0.78,10.38s18.01,9.06,28.21,3.18c10.2-5.88,16.57-15.85,17.41-6.48c0.84,9.36,2.76,16.86-11.88,20.07
+        s-19.33,8.62-27.37,6.94c-8.04-1.68-11.76,2.04-18.49-3.48S5.38,72.93,8.03,79.17s-5.88,11.64,3.96,14.17
+        c9.84,2.52,18.27,1.08,21.39,2.04"/>
+    <line class="line" x1="72.04" y1="32.16" x2="66.92" y2="38.67"/>
+    <line class="line" x1="77.75" y1="6.48" x2="77.75" y2="14.77"/>
+    <line class="line" x1="88.49" y1="10.37" x2="83.37" y2="16.88"/>
+    <line class="line" x1="77.75" y1="6.48" x2="77.75" y2="14.77"/>
+    <line class="line" x1="77.75" y1="6.48" x2="77.75" y2="14.77"/>
+    <line class="line" x1="77.75" y1="6.48" x2="77.75" y2="14.77"/>
+    <line class="line" x1="77.75" y1="34.53" x2="77.75" y2="42.81"/>
+    <line class="line" x1="83.37" y1="32.29" x2="87.35" y2="39.56"/>
+    <line class="line" x1="65.6" y1="10.68" x2="70.55" y2="17.32"/>
+    <line class="line" x1="88.07" y1="23.86" x2="96.35" y2="23.86"/>
+    <line class="line" x1="59.14" y1="23.86" x2="67.42" y2="23.86"/>
+    </svg>
+</body>
+</html>
