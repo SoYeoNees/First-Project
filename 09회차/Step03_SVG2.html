@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step03_SVG2.html</title>
+    <style>
+        .shapes {
+            width: 600px;
+            height: 400px;
+            background: #617a49;
+        }
+        path {
+            stroke: rgb(0, 243, 252);
+            stroke-width: 5;
+            fill: none;
+        }
+    </style>
+</head>
+<body>
+    <svg class="shapes">
+        <!--
+            M 펜툴 시작
+            L 직선 긋기
+            H 가로 직선
+            V 세로 직선
+            Z 펜툴 시작점과 잇기
+        -->
+        <path d="M 300 200 L 500 100 H 50 V 150 Z"></path>
+    </svg>
+</body>
+</html>
