@@ -8,6 +8,7 @@
 .main {
   overflow-x: hidden;
   font-family: "SUSE", sans-serif;
+  position: relative;
 }
 
 .inner {
@@ -1010,7 +1011,11 @@ body:not(.main) .container {
     .mainPeople_list {
       grid-template-columns: auto;
       position: relative;
+      text-align: center;
     }
+
+    .mainPeople_list-img > img { width :100%;}
+    .mainPeople_list-txt { padding: 20px 0 0;}
 
     .mainCulture {
       padding-bottom: 0px;
