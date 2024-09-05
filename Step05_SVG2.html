@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step05_SVG2.html</title>
+    <style>
+        @keyframes logo-ani {
+            0% {
+                /* stroke의 대시(간격패턴)의 시작점을 이동 */
+                stroke-dashoffset: 3072;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+    .mask-stroke {
+            fill: none;
+            stroke: red;
+            stroke-width: 20px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            /* stroke의 대시(간격패턴)를 조정 */
+            stroke-dasharray: 3072;            
+            animation: logo-ani 5s linear;
+        }
+
+        .logo {
+            fill: #fff;
+        }
+
+</style>
+</head>
+<body>
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+    <defs>
+        <mask id="mask">
+            <g>
+                <path class="logo" d="M38.72,83.76h73.88v14.86H56.43v45.59h51.9v14.65h-51.9v62.08H38.72V83.76z"/>
+                <path class="logo" d="M153.02,83.76h17.71v122.33h58.62v14.86h-76.33V83.76z"/>
+                <path class="logo" d="M334.29,156.62h-53.33v49.46h59.43v14.86h-77.14V83.76h74.09v14.86h-56.38v43.35h53.33V156.62z"/>
+                <path class="logo" d="M452.68,220.94l-17.5-30.33c-7.12-11.6-11.6-19.13-15.88-27.07h-0.41c-3.87,7.94-7.73,15.27-14.86,27.27l-16.49,30.12
+                    h-20.35l41.93-69.41l-40.3-67.78h20.56l18.11,32.16c5.09,8.96,8.96,15.88,12.62,23.2h0.61c3.87-8.14,7.33-14.45,12.42-23.2
+                    l18.73-32.16h20.35l-41.72,66.76l42.74,70.42H452.68z"/>
+            </g>
+        </mask>
+    </defs>
+
+     <path class="mask-stroke" mask="url(#mask)" d="M119.46,90.2l-72.76-0.51v152.59c0,0-43.45-92.61-21.73-92.28s98.53,0,98.53,0s-5.56-119.93,9.09-116.39
+	c14.65,3.54,28.8,21.47,29.31,50.15s0,128.72,0,128.72l67.44,0.47c0,0-37.63-195.5,7.85-188.42s100.16,66.69,100.16,66.69h-66.3
+	v134.4l-70.23-77.81l139.59-1.01L130.07,224.6l214.74-12.63c0,0-12.13-176.34,8.08-165.73c20.21,10.61,28.29,37.52,28.29,37.52
+	l92.04,149.94l15.07-155.12l-28.8,5.18l-98.53,166.61L119.46,90.2z"/>   
+</svg>
+<script>
+    console.log(document.querySelector('.mask-stroke').getTotalLength());
+</script>
+</body>
+</html>
